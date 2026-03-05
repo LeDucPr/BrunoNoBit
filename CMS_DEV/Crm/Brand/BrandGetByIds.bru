@@ -1,0 +1,25 @@
+meta {
+  name: BrandGetByIds
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{cms-localhost}}/api/Brand/BrandGetByIds
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+    "BrandIds": ["2b17190c-a6c8-4f08-9dda-0adc1b787444"]
+  }
+}
+
+settings {
+  encodeUrl: true
+}

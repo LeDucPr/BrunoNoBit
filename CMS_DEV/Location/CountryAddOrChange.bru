@@ -1,0 +1,30 @@
+meta {
+  name: CountryAddOrChange
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{cms-localhost}}/api/Location/CountryAddOrChange
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "Id": "9cbfbd7f-7053-4abd-8aa1-d142adfce6a9",
+      "CountryName": "Đông Lào", 
+      "CountryCode": "vn", 
+      "CountryLang": "Tiếng Việt", 
+      "CountryLangCode": "vi",
+      "isEnableTranslate":false
+  }
+}
+
+settings {
+  encodeUrl: true
+}

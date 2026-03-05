@@ -1,0 +1,29 @@
+meta {
+  name: DealerLevelAddOrChange
+  type: http
+  seq: 6
+}
+
+post {
+  url: {{cms-localhost}}/api/Dealer/DealerLevelAddOrChange
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "Id": "620d5e48-d8d1-40f8-b5a2-46fa4c2a688a",
+      "Code": "Level1", 
+      "Name": "Đại lý cấp 1",
+      "Description": "Đại lý cấp 1",
+      "Priority": 1
+  }
+}
+
+settings {
+  encodeUrl: true
+}

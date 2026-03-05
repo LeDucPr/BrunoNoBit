@@ -1,0 +1,25 @@
+meta {
+  name: DealerGetById
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{cms-localhost}}/api/Dealer/DealerGetById
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "DealerId": "15df32c6-949d-4fb8-9c94-dadd664dfd47"
+  }
+}
+
+settings {
+  encodeUrl: true
+}

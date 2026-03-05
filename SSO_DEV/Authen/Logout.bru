@@ -1,0 +1,34 @@
+meta {
+  name: Logout
+  type: http
+  seq: 5
+}
+
+post {
+  url: {{sso-localhost}}/api/Account/Logout
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      
+  }
+}
+
+script:post-response {
+  let jsonData = res.getBody();
+  if(jsonData.status == true){
+  bru.setGlobalEnvVar("token", "");
+  bru.setGlobalEnvVar("refreshToken", "");
+  }
+  
+}
+
+settings {
+  encodeUrl: true
+}

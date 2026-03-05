@@ -1,0 +1,32 @@
+meta {
+  name: AddOrChange
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{cms-localhost}}/api/Locale/AddOrChange
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "LocaleComponent": [
+          {
+              "LangCode": "VN",
+              "ResourceModule": 7,
+              "ResourceKey": "dashboard.doctor.chart.max.user",
+              "ResourceValue": "Biểu đồ Doctor có nhiều user nhất"
+          }
+      ]
+  }
+}
+
+settings {
+  encodeUrl: true
+}

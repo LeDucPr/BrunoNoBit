@@ -1,0 +1,31 @@
+meta {
+  name: Signup 2 (Other Normal User)
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{sso-localhost}}/api/Account/Signup
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+}
+
+body:json {
+  {
+      "Email": "huanrose@gmail.cc",
+      "PhoneNumber": "0932747484",
+      "UserName": "huanRose",
+      "Password": "huanRose@123",
+      "FullName": "Ngôi nhà hoa hồng",
+      "AvatarUrl": "https://www.bing.com/images/search?view=detailV2&ccid=ZjugB%2fy6&id=CFC0D1DD7DCCB851A7607AAA047F88D9943FA3CD&thid=OIP.ZjugB_y6Nf56UuCIuDWAQgHaEo&mediaurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.663ba007fcba35fe7a52e088b8358042%3frik%3dzaM%252flNmIfwSqeg%26riu%3dhttp%253a%252f%252f4.bp.blogspot.com%252f-FwGCPA-SITE%252fUhhnUUwL4_I%252fAAAAAAAAX5I%252fknZGGijEISw%252fs1600%252fRed%252bBull%252bWallpapers.jpg%26ehk%3d6HV9oGRf7h17KPyRlYEDv74B7Ak1bByIxNm5rD7rhT8%253d%26risl%3d%26pid%3dImgRaw%26r%3d0&exph=1000&expw=1600&q=redbull&FORM=IRPRST&ck=5B722126C6C5ADB617E9CC5AC16BE2EE&selectedIndex=7&itb=0",
+      "AuthType": {{authType}}
+  }
+}
+
+settings {
+  encodeUrl: true
+}

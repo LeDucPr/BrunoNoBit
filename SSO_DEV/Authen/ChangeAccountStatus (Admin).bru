@@ -1,0 +1,30 @@
+meta {
+  name: ChangeAccountStatus (Admin)
+  type: http
+  seq: 8
+}
+
+post {
+  url: {{sso-localhost}}/api/Account/ChangeAccountStatus
+  body: json
+  auth: bearer
+}
+
+headers {
+  Content-Type: application/json
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "AccountId": "ff78ee1f-83e2-4ba9-ac77-63d2a8562a06",
+      "AccountStatus": 1
+  }
+}
+
+settings {
+  encodeUrl: true
+}

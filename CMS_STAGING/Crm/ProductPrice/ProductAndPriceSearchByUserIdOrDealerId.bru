@@ -1,0 +1,34 @@
+meta {
+  name: ProductAndPriceSearchByUserIdOrDealerId
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{cms-staging}}/api/ProductPrice/ProductAndPriceSearchByUserIdOrDealerId
+  body: json
+  auth: bearer
+}
+
+headers {
+  Content-Type: application/json
+  Authorization: Bearer eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJIQ2FyZS5OcE9uLlNlc2lvbi5Db2RlIjoiU0VTU0lPTklELUtoYUJhbmgtMDE5YmMwMGYzNGE5NzlhZTg4MmYxMDU0ZDEzYmQ0Y2MiLCJUb2tlbkNyZWF0ZWRVdGMiOiIyMDI2LTAxLTE1VDEzOjA5OjQwWiIsIlBlcm1pc3Npb25TZXNzaW9uIjoiMSIsIk1pbnV0ZUV4cGlyZSI6IjQ4MCIsInVuaXF1ZV9uYW1lIjoiS2hhQmFuaCIsIkxvZ2luVHlwZSI6IjEiLCJzaWQiOiJhMTNhNTVjOC0yMzBkLTRlMTktYjc5NS0xYTExM2QxOTY2MjYiLCJ0eXAiOiJEZWZhdWx0IiwiVXNpbmdBY2NvdW50TGFuZ0NvZGUiOiJWTiIsIlVzaW5nQ3VycmVudEF1dGhUeXBlIjoiMiIsIm5iZiI6MTc2ODQ1Mzc4MCwiZXhwIjoxNzY4NDgyNTgwLCJpYXQiOjE3Njg0NTM3ODB9.Xa4fe93dn221nRoaUlyi3meM2OL87t2PNZqv3qxqO85fPGgdFOayIVhsSaIM8OyEf-scTCsRV_2Uds__9EgqzQ
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      // "DealerId": "d3d10763-ce7f-4de5-a828-458f2a8583f9",
+      // "accountId": "5205eeda-4e45-445e-bc23-379a54f9b0b8",
+      "Keyword": "",
+      "PageSize": 10,
+      "PageIndex": 0
+  }
+}
+
+settings {
+  encodeUrl: true
+}

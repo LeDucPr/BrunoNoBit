@@ -1,0 +1,29 @@
+meta {
+  name: AddOrChangeGroupAndMember
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{cms-staging}}/api/AccountGroup/AddOrChangeGroupAndMember
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      // "GroupId": "36562f2a-dc11-4fa0-8939-7105586202cf", 
+      "Leader": "a13a55c8-230d-4e19-b795-1a113d196626", 
+      "GroupName": "Group các Member của Bảnh",
+      "Members": ["4c8b6c70-12be-490f-858e-fcd71c349b63"], 
+      "GroupTypes": [1]
+  }
+}
+
+settings {
+  encodeUrl: true
+}

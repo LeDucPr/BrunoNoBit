@@ -1,0 +1,29 @@
+meta {
+  name: ProductAttributeSearch
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{cms-staging}}/api/Product/ProductAttributeSearch
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "productIds": ["85db64f4-6e7a-4992-be79-b8dc0197d453"],
+  
+      "Keyword": "",
+      "PageSize": 10,
+      "PageIndex": 0
+  }
+}
+
+settings {
+  encodeUrl: true
+}

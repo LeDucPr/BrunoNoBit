@@ -1,0 +1,38 @@
+meta {
+  name: Delete
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{cms-localhost}}/api/Locale/Delete
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "LocaleComponent": [
+          // {
+          //     "LangCode": "VNM",
+          //     "ResourceKey": "locale.search.textbox"
+          // }, 
+          // {
+          //     "LangCode": "USA",
+          //     "ResourceKey": "locale.search.textbox"
+          // },
+          {
+              "ResourceModule": 2,
+              "ResourceKey": "locale.search.textbox"
+          }
+      ]
+  }
+}
+
+settings {
+  encodeUrl: true
+}

@@ -1,0 +1,50 @@
+meta {
+  name: AddOrChangeAccountInfo
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{sso-localhost}}/api/AccountInfo/AddOrChangeAccountInfo
+  body: json
+  auth: bearer
+}
+
+headers {
+  Content-Type: application/json
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "AccountId": "f8d8794a-5a16-4d01-ba29-13f82c782db0",
+      "userName": "huanRose",
+      "permissions": [16, 2, 4],
+      // Address
+      // "CountryId": "183e4852-f127-4862-9994-864a9126ff97",
+      // "ProvinceId": "e2f22eae-8c4c-4bba-a53c-20ec43dff0cf",
+      "AddressLine": "Hoàng Cương, Thanh Ba, Phú Thọ",
+      // Info
+      "FullName": "Ngô Bá Khá",
+      "DateOfBirth": "1990-01-01T00:00:00Z",
+      "Gender": 1,
+      "Occupation": "Giang hồ mõm",
+      "MaritalStatus": "Single",
+      "Bio": "Buôn bán chất kích thích",
+      "Website": "https://nguyenvana.róe",
+      "SocialLinks": "https://facebook.com/róe",
+      "IdentificationNumber": "012345675489",
+      "PassportNumber": "C1234567",
+      "TaxCode": "1234567890",
+      "CompanyName": "Công ty TNHH ABC",
+      "CompanyAddress": "456 Đường DEF, Quận GHI, TP.HCM",
+      "Status": 1
+  }
+}
+
+settings {
+  encodeUrl: true
+}

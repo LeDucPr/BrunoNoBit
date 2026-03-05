@@ -1,0 +1,37 @@
+meta {
+  name: DealerChangeMember
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{cms-localhost}}/api/Dealer/DealerChangeMember
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "Components": [
+          {
+              "DealerId": "15df32c6-949d-4fb8-9c94-dadd664dfd47",
+              "AddMember": [
+                  "00711e76-34eb-4026-a10d-76dc1162ed35",
+                  "007c67d9-142a-4b4d-9c3f-91c40d300c4b",
+                  "0074e66f-4c64-42a3-8983-df0f46891e3a"
+              ],
+              "ExcludeMember": [
+                  "0074e66f-4C64-42a3-8983-df0f46891e3a"
+              ]
+          }
+      ]
+  }
+}
+
+settings {
+  encodeUrl: true
+}

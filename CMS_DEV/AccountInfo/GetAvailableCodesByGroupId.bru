@@ -1,0 +1,28 @@
+meta {
+  name: GetAvailableCodesByGroupId
+  type: http
+  seq: 9
+}
+
+post {
+  url: {{cms-localhost}}/api/AccountPermission/GetAvailableCodesByGroupId
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "Keyword": "HCare.SSO.Account.ChangePermission",
+      "AccountGroupId":"892174a2-696c-4acd-a149-7cdcf8318e42",
+      "PageSize": 25,
+      "PageIndex": 0
+  }
+}
+
+settings {
+  encodeUrl: true
+}

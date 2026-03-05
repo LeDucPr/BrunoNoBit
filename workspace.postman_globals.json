@@ -1,0 +1,51 @@
+{
+	"id": "fc6509c5-d6b9-4447-8b90-5fc2cc07d4c3",
+	"values": [
+		{
+			"key": "token",
+			"value": "",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "sso-localhost",
+			"value": "http://localhost:14023",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "refreshToken",
+			"value": "",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "authType",
+			"value": "2",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "sso_staging",
+			"value": "http://sso-api-dev.fa.care",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "cms-localhost",
+			"value": "http://localhost:14024",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "cms-staging",
+			"value": "http://cms-api-dev.fa.care",
+			"type": "default",
+			"enabled": true
+		}
+	],
+	"name": "Globals",
+	"_postman_variable_scope": "globals",
+	"_postman_exported_at": "2025-12-29T09:19:14.191Z",
+	"_postman_exported_using": "Postman/11.77.2"
+}

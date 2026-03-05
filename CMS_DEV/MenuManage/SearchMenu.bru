@@ -1,0 +1,25 @@
+meta {
+  name: SearchMenu
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{cms-localhost}}/api/Menu/SearchMenu
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "Keyword": ""
+  }
+}
+
+settings {
+  encodeUrl: true
+}

@@ -1,0 +1,56 @@
+meta {
+  name: AddOrChangeAccountInfo
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{cms-localhost}}/api/AccountInfo/AddOrChangeAccountInfo
+  body: json
+  auth: bearer
+}
+
+headers {
+  Content-Type: application/json
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "userName": "anbittttt",
+      "password": "jqiRKggZYon007aCQYaVfOL4lCM=",
+      "permissions": [
+  
+          // 8 doctor,
+          16
+      ],
+      "accountStatus": 1,
+      "fullName": "BS anbit",
+      "companyAddress": "yên lãng",
+      "occupation": "streamer",
+      "companyName": "mixiFoood",
+      "maritalStatus": "đã kết hôn",
+      "bio": "scammer",
+      "website": "https://www.youtube.com/",
+      "socialLinks": "https://www.youtube.com/",
+      "identificationNumber": "038233373273",
+      "passportNumber": "sdsdsdsdss",
+      "taxCode": "dsdsdsdsd",
+      "dateOfBirth": "2003-02-16T17:00:00.000Z",
+      "gender": 1,
+      "accountInfoStatus": 1,
+      "countryId": "183e4852-f127-4862-9994-864a9126ff97",
+      "provinceId": "469a6ea4-8507-41b5-b69f-85cd4f13d57a",
+      "addressLine": "ahihi",
+      "wardId": "f6aad43b-7f06-4ada-a290-691470c549e8"
+      // "accountId": "0b9d365b-19f9-4ab8-a141-d892453caf33"
+  
+  }
+}
+
+settings {
+  encodeUrl: true
+}

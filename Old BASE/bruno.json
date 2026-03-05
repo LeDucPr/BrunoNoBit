@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "Old BASE",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}

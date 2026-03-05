@@ -1,0 +1,260 @@
+meta {
+  name: ProductBatchAddOrChange
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{cms-localhost}}/api/Warehouse/ProductBatchAddOrChange
+  body: json
+  auth: bearer
+}
+
+headers {
+  Content-Type: application/json
+  Authorization: Bearer eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJIQ2FyZS5OcE9uLlNlc2lvbi5Db2RlIjoiU0VTU0lPTklELUtoYUJhbmgtMDE5YmI3YTdlMmU1N2M0Njk0ZDZhMjJkYjk4ZGM3MzIiLCJUb2tlbkNyZWF0ZWRVdGMiOiIyMDI2LTAxLTEzVDIxOjU5OjUxWiIsIlBlcm1pc3Npb25TZXNzaW9uIjoiMSIsIk1pbnV0ZUV4cGlyZSI6IjQ4MCIsInVuaXF1ZV9uYW1lIjoiS2hhQmFuaCIsIkxvZ2luVHlwZSI6IjEiLCJzaWQiOiJhMTNhNTVjOC0yMzBkLTRlMTktYjc5NS0xYTExM2QxOTY2MjYiLCJ0eXAiOiJEZWZhdWx0IiwiVXNpbmdBY2NvdW50TGFuZ0NvZGUiOiJWTiIsIm5iZiI6MTc2ODMxMjc5MSwiZXhwIjoxNzY4MzQxNTkxLCJpYXQiOjE3NjgzMTI3OTF9.yHYirfzpKLe6-u0onL7Em1KqVghaUpKVhkIFxr7i0dUDcWAio1gG6sj0Z7Lue3sy--HZC9ZwC9A3lIw2fV49Kw
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "Components": [
+          {
+              "BatchId": "758694d0-73b5-4ea7-8f79-7f91dea86efa",
+              "BatchName": "Lô hàng nhập kho A - 001",
+              "WarehouseIdTo": "87e20443-20d5-44eb-aa7f-aef2fe7b4e64",
+              "AddBatches": [
+                  {
+                      "ProductId": "536991c7-e5b4-41f1-ab86-63eb586898d7",
+                      "TotalAmount": 100,
+                      "TransitDate": "2023-11-01T08:00:00Z",
+                      "Note": "Nhập mới sản phẩm 1"
+                  },
+                  {
+                      "ProductId": "9df424a1-443d-48a2-8162-cd5beed74832",
+                      "TotalAmount": 50,
+                      "TransitDate": "2023-11-01T08:00:00Z",
+                      "Note": "Nhập kèm sản phẩm 2"
+                  }
+              ]
+          }
+      ]
+  }
+  
+  
+  // {
+  //     "Components": [
+  //         {
+  //             "BatchId": "758694d0-73b5-4ea7-8f79-7f91dea86efa",
+  //             "WarehouseIdTo": "87e20443-20d5-44eb-aa7f-aef2fe7b4e64",
+  //             "ExcludeBatches": [
+  //                 {
+  //                     "ProductId": "536991c7-e5b4-41f1-ab86-63eb586898d7",
+  //                     "Note": "cccccc"
+  //                 },
+  //                 {
+  //                     "ProductId": "9df424a1-443d-48a2-8162-cd5beed74832",
+  //                     "Note": "vvvvvv"
+  //                 }
+  //             ]
+  //         }
+  //     ]
+  // }
+  
+  
+  
+  
+  // {
+  //     "Components": [
+  //         {
+  //             "BatchName": "Lô hàng nhập kho A - 001",
+  //             "WarehouseIdTo": "87e20443-20d5-44eb-aa7f-aef2fe7b4e64",
+  //             "AddBatches": [
+  //                 {
+  //                     "ProductId": "536991c7-e5b4-41f1-ab86-63eb586898d7",
+  //                     "TotalAmount": 100,
+  //                     "TransitDate": "2023-11-01T08:00:00Z",
+  //                     "Note": "Nhập mới sản phẩm 1"
+  //                 },
+  //                 {
+  //                     "ProductId": "9df424a1-443d-48a2-8162-cd5beed74832",
+  //                     "TotalAmount": 50,
+  //                     "TransitDate": "2023-11-01T08:00:00Z",
+  //                     "Note": "Nhập kèm sản phẩm 2"
+  //                 }
+  //             ]
+  //         },
+  //         {
+  //             "BatchName": "Lô hàng nhập kho B - 002",
+  //             "WarehouseIdTo": "73f422a5-30a2-4f4a-b09f-faf9247dcaff",
+  //             "AddBatches": [
+  //                 {
+  //                     "ProductId": "089799cf-9d1d-4f50-a01c-e486fdd1ffed",
+  //                     "TotalAmount": 200,
+  //                     "TransitDate": "2023-11-02T09:30:00Z",
+  //                     "Note": "Hàng dễ vỡ"
+  //                 }
+  //             ]
+  //         },
+  //         {
+  //             "BatchName": "Lô hàng chuyển kho C - 003",
+  //             "WarehouseIdFrom": "87e20443-20d5-44eb-aa7f-aef2fe7b4e64",
+  //             "WarehouseIdTo": "6b71baa4-e363-44b1-97af-5e6df6212ec7",
+  //             "AddBatches": [
+  //                 {
+  //                     "ProductId": "fecd6f81-7e20-4716-b18d-0e4014448b5f",
+  //                     "TotalAmount": 150,
+  //                     "TransitDate": "2023-11-03T14:00:00Z",
+  //                     "Note": "Chuyển từ kho A sang C"
+  //                 }
+  //             ]
+  //         },
+  //         {
+  //             "BatchName": "Lô hàng nhập kho D - 004",
+  //             "WarehouseIdTo": "d8b3fa83-d839-4417-9ff2-39f56dfdb6cf",
+  //             "AddBatches": [
+  //                 {
+  //                     "ProductId": "732c6dcd-4aea-407c-8192-b1ab8cef9ff4",
+  //                     "TotalAmount": 300,
+  //                     "TransitDate": "2023-11-04T10:15:00Z",
+  //                     "Note": "Nhập số lượng lớn"
+  //                 },
+  //                 {
+  //                     "ProductId": "3034e7e1-803e-49d7-aba5-8f8322a3da35",
+  //                     "TotalAmount": 20,
+  //                     "TransitDate": "2023-11-04T10:15:00Z",
+  //                     "Note": "Hàng mẫu"
+  //                 }
+  //             ]
+  //         },
+  //         {
+  //             "BatchName": "Lô hàng nhập kho E - 005",
+  //             "WarehouseIdTo": "044a1811-84b2-4252-bd4b-7783547af17d",
+  //             "AddBatches": [
+  //                 {
+  //                     "ProductId": "33170653-dbbd-4eae-888e-bcf1fe92e326",
+  //                     "TotalAmount": 80,
+  //                     "TransitDate": "2023-11-05T11:00:00Z",
+  //                     "Note": "Đợt 1"
+  //                 }
+  //             ]
+  //         },
+  //         {
+  //             "BatchName": "Lô hàng nhập kho F - 006",
+  //             "WarehouseIdTo": "3671bccf-cc40-43ea-86c0-108cfd554c65",
+  //             "AddBatches": [
+  //                 {
+  //                     "ProductId": "c0ebaf8f-df2c-4468-96e0-b2c04941a881",
+  //                     "TotalAmount": 120,
+  //                     "TransitDate": "2023-11-06T13:45:00Z",
+  //                     "Note": "Kiểm tra kỹ khi nhận"
+  //                 },
+  //                 {
+  //                     "ProductId": "2ec55473-a5c6-409e-af50-c07cbaec10e0",
+  //                     "TotalAmount": 60,
+  //                     "TransitDate": "2023-11-06T13:45:00Z",
+  //                     "Note": ""
+  //                 }
+  //             ]
+  //         },
+  //         {
+  //             "BatchName": "Lô hàng bổ sung kho A - 007",
+  //             "WarehouseIdTo": "87e20443-20d5-44eb-aa7f-aef2fe7b4e64",
+  //             "AddBatches": [
+  //                 {
+  //                     "ProductId": "173fad4e-fe2f-45ee-8b9b-2171723f1fba",
+  //                     "TotalAmount": 500,
+  //                     "TransitDate": "2023-11-07T09:00:00Z",
+  //                     "Note": "Bổ sung hàng tồn kho"
+  //                 }
+  //             ]
+  //         }
+  //     ]
+  // }
+  // {
+  //     "Components": [
+  //         {
+  //             "WarehouseIdTo": "87e20443-20d5-44eb-aa7f-aef2fe7b4e64",
+  //             "Exclude": [
+  //                 {
+  //                     "ProductId": "536991c7-e5b4-41f1-ab86-63eb586898d7",
+  //                     "Note": "Nhập mới sản phẩm 1"
+  //                 },
+  //                 {
+  //                     "ProductId": "9df424a1-443d-48a2-8162-cd5beed74832",
+  //                     "Note": "Nhập kèm sản phẩm 2"
+  //                 }
+  //             ]
+  //         },
+  //         {
+  //             "WarehouseIdTo": "73f422a5-30a2-4f4a-b09f-faf9247dcaff",
+  //             "Exclude": [
+  //                 {
+  //                     "ProductId": "089799cf-9d1d-4f50-a01c-e486fdd1ffed",
+  //                     "Note": "Hàng dễ vỡ"
+  //                 }
+  //             ]
+  //         },
+  //         {
+  //             "WarehouseIdTo": "6b71baa4-e363-44b1-97af-5e6df6212ec7",
+  //             "Exclude": [
+  //                 {
+  //                     "ProductId": "fecd6f81-7e20-4716-b18d-0e4014448b5f",
+  //                     "Note": "Chuyển từ kho A sang C"
+  //                 }
+  //             ]
+  //         },
+  //         {
+  //             "WarehouseIdTo": "d8b3fa83-d839-4417-9ff2-39f56dfdb6cf",
+  //             "Exclude": [
+  //                 {
+  //                     "ProductId": "732c6dcd-4aea-407c-8192-b1ab8cef9ff4",
+  //                     "Note": "Rút số lượng lớn"
+  //                 },
+  //                 {
+  //                     "ProductId": "3034e7e1-803e-49d7-aba5-8f8322a3da35",
+  //                     "Note": "Bị loot trộm"
+  //                 }
+  //             ]
+  //         },
+  //         {
+  //             "WarehouseIdTo": "044a1811-84b2-4252-bd4b-7783547af17d",
+  //             "Exclude": [
+  //                 {
+  //                     "ProductId": "33170653-dbbd-4eae-888e-bcf1fe92e326",
+  //                     "Note": "Không biết gì hết"
+  //                 }
+  //             ]
+  //         },
+  //         {
+  //             "WarehouseIdTo": "3671bccf-cc40-43ea-86c0-108cfd554c65",
+  //             "Exclude": [
+  //                 {
+  //                     "ProductId": "c0ebaf8f-df2c-4468-96e0-b2c04941a881",
+  //                     "Note": "Kiểm tra kỹ khi nhận"
+  //                 },
+  //                 {
+  //                     "ProductId": "2ec55473-a5c6-409e-af50-c07cbaec10e0",
+  //                     "Note": ""
+  //                 }
+  //             ]
+  //         },
+  //         {
+  //             "WarehouseIdTo": "87e20443-20d5-44eb-aa7f-aef2fe7b4e64",
+  //             "Exclude": [
+  //                 {
+  //                     "ProductId": "173fad4e-fe2f-45ee-8b9b-2171723f1fba",
+  //                     "Note": "Bổ sung hàng tồn kho"
+  //                 }
+  //             ]
+  //         }
+  //     ]
+  // }
+}
+
+settings {
+  encodeUrl: true
+}

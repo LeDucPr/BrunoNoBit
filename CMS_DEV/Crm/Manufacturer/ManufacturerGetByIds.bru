@@ -1,0 +1,27 @@
+meta {
+  name: ManufacturerGetByIds
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{cms-localhost}}/api/Manufacturer/ManufacturerGetByIds
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+    "ManufacturerIds": [
+      "820a8a1d-e85b-43a6-8e71-5a2640251648"
+    ]
+  }
+}
+
+settings {
+  encodeUrl: true
+}

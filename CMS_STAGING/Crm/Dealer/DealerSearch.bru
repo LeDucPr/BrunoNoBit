@@ -1,0 +1,29 @@
+meta {
+  name: DealerSearch
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{cms-localhost}}/api/Dealer/DealerSearch
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      // "DealerLevelId": "", // Guid
+      // "ParentDealerId": "", //Guid 
+      "Keyword": "",
+      "PageSize": 1,
+      "PageIndex": 0
+  }
+}
+
+settings {
+  encodeUrl: true
+}

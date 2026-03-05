@@ -1,0 +1,31 @@
+meta {
+  name: ChangeCurrentLanguage
+  type: http
+  seq: 7
+}
+
+post {
+  url: {{sso-localhost}}/api/Account/ChangeCurrentLanguage
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "LangCode": "VN"
+  }
+}
+
+script:post-response {
+  let jsonData = res.getBody();
+  bru.setGlobalEnvVar("token", jsonData.data.model.token);
+  bru.setGlobalEnvVar("refreshToken", jsonData.data.model.refreshToken);
+}
+
+settings {
+  encodeUrl: true
+}

@@ -1,0 +1,31 @@
+meta {
+  name: ProductBatchGetByBatchIdAndProductIds
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{cms-localhost}}/api/Warehouse/ProductBatchGetByBatchIdAndProductIds
+  body: json
+  auth: bearer
+}
+
+headers {
+  Content-Type: application/json
+  Authorization: Bearer eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJIQ2FyZS5OcE9uLlNlc2lvbi5Db2RlIjoiU0VTU0lPTklELUtoYUJhbmgtMDE5YmI3YTdlMmU1N2M0Njk0ZDZhMjJkYjk4ZGM3MzIiLCJUb2tlbkNyZWF0ZWRVdGMiOiIyMDI2LTAxLTEzVDIxOjU5OjUxWiIsIlBlcm1pc3Npb25TZXNzaW9uIjoiMSIsIk1pbnV0ZUV4cGlyZSI6IjQ4MCIsInVuaXF1ZV9uYW1lIjoiS2hhQmFuaCIsIkxvZ2luVHlwZSI6IjEiLCJzaWQiOiJhMTNhNTVjOC0yMzBkLTRlMTktYjc5NS0xYTExM2QxOTY2MjYiLCJ0eXAiOiJEZWZhdWx0IiwiVXNpbmdBY2NvdW50TGFuZ0NvZGUiOiJWTiIsIm5iZiI6MTc2ODMxMjc5MSwiZXhwIjoxNzY4MzQxNTkxLCJpYXQiOjE3NjgzMTI3OTF9.yHYirfzpKLe6-u0onL7Em1KqVghaUpKVhkIFxr7i0dUDcWAio1gG6sj0Z7Lue3sy--HZC9ZwC9A3lIw2fV49Kw
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "BatchId": "758694d0-73b5-4ea7-8f79-7f91dea86efa",
+      "ProductIds": ["9df424a1-443d-48a2-8162-cd5beed74832", "536991c7-e5b4-41f1-ab86-63eb586898d7"]
+  }
+}
+
+settings {
+  encodeUrl: true
+}

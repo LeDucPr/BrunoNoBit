@@ -1,0 +1,30 @@
+meta {
+  name: AccountInfoGetById
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{sso_staging}}/api/AccountInfo/AccountInfoGetById
+  body: json
+  auth: bearer
+}
+
+headers {
+  Content-Type: application/json
+  ~Authorization: ••••••
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "AccountId": "a13a55c8-230d-4e19-b795-1a113d196626"
+  }
+}
+
+settings {
+  encodeUrl: true
+}

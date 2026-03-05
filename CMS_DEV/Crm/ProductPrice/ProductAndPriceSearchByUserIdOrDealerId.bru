@@ -1,0 +1,33 @@
+meta {
+  name: ProductAndPriceSearchByUserIdOrDealerId
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{cms-localhost}}/api/ProductPrice/ProductAndPriceSearchByUserIdOrDealerId
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      // "DealerId": "d3d10763-ce7f-4de5-a828-458f2a8583f9",
+      // "DealerId": "23f43c38-9367-4ae7-809d-e1fda4469da2",
+      // "CategoryIds": [
+      //     "b6fe0d2d-4ad1-4131-b04a-ad2eee5e1a74",
+      //     "d19f6c91-e612-41ea-a58a-bf50da1baf8f"
+      // ],
+      "Keyword": "",
+      "PageSize": 2,  
+      "PageIndex": 0
+  }
+}
+
+settings {
+  encodeUrl: true
+}

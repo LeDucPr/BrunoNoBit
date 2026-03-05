@@ -1,0 +1,67 @@
+meta {
+  name: ProductAddOrChange
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{cms-staging}}/api/Product/ProductAddOrChange
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "components": [
+          {
+              // "productId": "536991c7-e5b4-41f1-ab86-63eb586898d7",
+              "productParentId": null,
+              "name": "Máy đo huyết áp điện tử NEW",
+              "code": "NEW-001",
+              "description": "Thiết bị đo huyết áp dùng trong bệnh viện",
+              "isAbstract": false,
+              "categoryIds": [],
+              "unitId": "e4d909c2-5d2b-4a7b-9f1a-abcdef123456",
+            
+              "brandId": "2b17190c-a6c8-4f08-9dda-0adc1b787444"
+          }
+          // {
+          //     "productId": "9df424a1-443d-48a2-8162-cd5beed74832",
+          //     "productParentId": null,
+          //     "name": "Khẩu trang y tế 3 lớp",
+          //     "code": "MASK-003",
+          //     "description": "Khẩu trang dùng một lần, đạt chuẩn y tế",
+          //     "isAbstract": false,
+          //     "category": 3,
+          //     "subCategory": 1,
+          //     "unitId": "f2d909c2-5d2b-4a7b-9f1a-abcdef654321",
+          //     "attributes": [
+          //         {
+          //             // "attributeId": "55555555-5555-5555-5555-555555555555",
+          //             // "productId": "9df424a1-443d-48a2-8162-cd5beed74832", // không nên truyền vào trong mọi trường hợp
+          //             "attributeName": "Màu sắc",
+          //             "attributeCode": "COLOR",
+          //             "dataType": 2,
+          //             "selectType": 1,
+          //             "description": "Màu sắc sản phẩm",
+          //             "attributeValues": [
+          //                 {
+          //                     // "productAttributeValueId": "66666666-6666-6666-6666-666666666666", 
+          //                     // "productAttributeId": "55555555-5555-5555-5555-555555555555", // không nên truyền vào trong mọi trường hợp
+          //                     "valueAsString": "Xanh dương"
+          //                 }
+          //             ]
+          //         }
+          //     ]
+          // }
+      ]
+  }
+}
+
+settings {
+  encodeUrl: true
+}

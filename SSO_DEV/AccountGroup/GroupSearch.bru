@@ -1,0 +1,27 @@
+meta {
+  name: GroupSearch
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{sso-localhost}}/api/AccountGroup/GroupSearch
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "Keyword": "",
+      "PageSize": 1000,
+      "PageIndex": 0
+  }
+}
+
+settings {
+  encodeUrl: true
+}

@@ -1,0 +1,39 @@
+meta {
+  name: ProductPriceUpsert
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{cms-staging}}/api/ProductPrice/ProductPriceUpsert
+  body: json
+  auth: bearer
+}
+
+headers {
+  Content-Type: application/json
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "Id" : "9fd16479-5b36-447d-98ba-3cf0d0cb8b28",
+      "ProductId" : "dadb2136-fa1a-4c2b-baf0-9a429160b174",
+      "DealerId" : null,
+      "DealerLevelId" : null,
+      "Price" : 190203,
+   
+      "PercentValue" : 19.2,
+      "Note" : "test19203",
+      "StartDate" : null,
+      "EndDate" : null,
+      "ApplyType" : null
+  }
+}
+
+settings {
+  encodeUrl: true
+}

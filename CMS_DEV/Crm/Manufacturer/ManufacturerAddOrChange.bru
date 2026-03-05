@@ -1,0 +1,41 @@
+meta {
+  name: ManufacturerAddOrChange
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{cms-localhost}}/api/Manufacturer/ManufacturerAddOrChange
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  // {
+  //   "Id": null, 
+  //   "Name": "Samsung",
+  //   "Code": "SAMSUNG_KR",
+  //   "Description": "Samsung Electronics",
+  //   "Status": 1,
+  //   "CountryId": "183e4852-f127-4862-9994-864a9126ff97",
+  //   "Website": "https://www.samsung.com"
+  // }
+  
+  {
+    "Id": null,
+    "Name": "Sony",
+    "Code": "SONY_JP",
+    "Description": "Sony Corporation",
+    "Status": 1,
+    "CountryId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+    "Website": "https://www.sony.com"
+  }
+}
+
+settings {
+  encodeUrl: true
+}

@@ -1,0 +1,25 @@
+meta {
+  name: CountryGetByIds
+  type: http
+  seq: 5
+}
+
+post {
+  url: {{cms-localhost}}/api/Location/CountryGetByIds
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "Ids": ["3128f936-a7cd-4654-91ce-36eb3d6b2cdf", "2183f680-159f-404f-be0f-2a4304a9f6b9"]
+  }
+}
+
+settings {
+  encodeUrl: true
+}

@@ -1,0 +1,27 @@
+meta {
+  name: GetAvailableMembersToAdd
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{cms-localhost}}/api/AccountGroup/GetAvailableMembersToAdd
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "GroupId": "16ddb290-0ec5-42a8-91cc-816c1ea4d050",  
+      "PageSize": 100,
+      "PageIndex": 0
+  }
+}
+
+settings {
+  encodeUrl: true
+}

@@ -1,0 +1,27 @@
+meta {
+  name: CategoryGetByIds
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{cms-staging}}/api/Category/CategoryGetByIds
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "CategoryIds": ["be757bcb-8488-4dc5-b997-8f6d92760266", "ef460964-1a41-456e-b242-25b078887b33"], 
+      "IsFlattenBaseCategory": false,
+      "RecursiveDepth": 3
+  }
+}
+
+settings {
+  encodeUrl: true
+}

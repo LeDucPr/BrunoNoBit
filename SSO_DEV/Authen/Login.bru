@@ -1,0 +1,37 @@
+meta {
+  name: Login
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{sso-localhost}}/api/Account/Login
+  body: json
+  auth: bearer
+}
+
+headers {
+  Content-Type: application/json
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "UserName": "KhaBanh",
+      "Password": "Banhditusapve@1234",
+      "AuthType": {{authType}}
+  }
+}
+
+script:post-response {
+  let jsonData = res.getBody();
+  bru.setGlobalEnvVar("token", jsonData.data.model.token);
+  bru.setGlobalEnvVar("refreshToken", jsonData.data.model.refreshToken);
+}
+
+settings {
+  encodeUrl: true
+}

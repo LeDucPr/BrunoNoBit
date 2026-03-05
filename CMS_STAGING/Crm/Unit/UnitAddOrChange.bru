@@ -1,0 +1,29 @@
+meta {
+  name: UnitAddOrChange
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{cms-localhost}}/api/Unit/UnitAddOrChange
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "id": null,
+      "unitGroup": 2,
+      "unitName": "123123123fasdfasdf",
+      "description": "sdfasdfsadfdescription",
+      "isActive": true
+  }
+}
+
+settings {
+  encodeUrl: true
+}

@@ -1,0 +1,28 @@
+meta {
+  name: FormulaConfigSearch
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{cms-localhost}}/api/Formula/FormulaConfigSearch
+  body: json
+  auth: inherit
+}
+
+headers {
+  Content-Type: application/json
+  Authorization: Bearer eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJIQ2FyZS5OcE9uLlNlc2lvbi5Db2RlIjoiU0VTU0lPTklELUtoYUJhbmgtMDE5YzQxODMxNjUwN2RjYzk3ZmVmMWIyZjMzNjIxMGYiLCJUb2tlbkNyZWF0ZWRVdGMiOiIyMDI2LTAyLTA5VDE2OjI3OjE1WiIsIlBlcm1pc3Npb25TZXNzaW9uIjoiMzMiLCJNaW51dGVFeHBpcmUiOiI0ODAiLCJ1bmlxdWVfbmFtZSI6IktoYUJhbmgiLCJMb2dpblR5cGUiOiIxIiwic2lkIjoiYTEzYTU1YzgtMjMwZC00ZTE5LWI3OTUtMWExMTNkMTk2NjI2IiwidHlwIjoiRGVmYXVsdCIsIlVzaW5nQWNjb3VudExhbmdDb2RlIjoiVk4iLCJVc2luZ0N1cnJlbnRBdXRoVHlwZSI6IjIiLCJuYmYiOjE3NzA2MjU2MzUsImV4cCI6MTc3MDY1NDQzNSwiaWF0IjoxNzcwNjI1NjM1fQ.M7Yl0HGVW3OwWJkeURa6heRUBhzrV3999j9jNS9WMrGFfV_xHG07P6iL7HIk0G9nN9q6UjIC7Qca03gaXlX2ZA
+}
+
+body:json {
+  {
+      "Keyword": "",
+      "PageSize": 2,
+      "PageIndex": 0
+  }
+}
+
+settings {
+  encodeUrl: true
+}

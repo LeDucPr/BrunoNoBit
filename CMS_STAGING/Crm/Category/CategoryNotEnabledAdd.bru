@@ -1,0 +1,25 @@
+meta {
+  name: CategoryNotEnabledAdd
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{cms-staging}}/api/Category/CategoryNotEnabledAdd
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "CategoryIds" : ["b6fe0d2d-4ad1-4131-b04a-ad2eee5e1a74"]
+  }
+}
+
+settings {
+  encodeUrl: true
+}

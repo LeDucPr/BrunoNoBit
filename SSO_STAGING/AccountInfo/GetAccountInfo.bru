@@ -1,0 +1,28 @@
+meta {
+  name: GetAccountInfo
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{sso_staging}}/api/AccountInfo/GetAccountInfo
+  body: json
+  auth: bearer
+}
+
+headers {
+  Content-Type: application/json
+  ~Authorization: ••••••
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {}
+}
+
+settings {
+  encodeUrl: true
+}

@@ -1,0 +1,32 @@
+meta {
+  name: CategorySearch
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{cms-staging}}/api/Category/CategorySearch
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "Keyword": "",
+      "CategoryComboId": null, // null: lấy tất cả, không null: lấy theo CategoryComboId
+      "IsOnlyShowBaseCategory" : false, // true: chỉ lấy các category base, false: lấy cả base và variant category
+      "IsOnlyShowVariantCategory": false, // true: chỉ lấy các category variant, false: lấy cả base và variant category
+      "IsFlattenBaseCategory": false,  // true: không phân cấp, false: phân cấp
+      "RecursiveDepth": -1, // -1: lấy tất cả, 0: không lấy, >0: lấy theo độ sâu
+      "PageSize": 25,
+      "PageIndex": 0
+  }
+}
+
+settings {
+  encodeUrl: true
+}

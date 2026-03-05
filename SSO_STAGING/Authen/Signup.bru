@@ -1,0 +1,31 @@
+meta {
+  name: Signup
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{sso_staging}}/api/Account/Signup
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+}
+
+body:json {
+  {
+      "Email": "KhaLaBanh@gmail.cc",
+      "PhoneNumber": "0932748324",
+      "UserName": "KhaBanh",
+      "Password": "Banhditusapve@1234",
+      "FullName": "Ngô Bá Khá",
+      "AvatarUrl": "https://google.com",
+      "AuthType": {{authType}}
+  }
+}
+
+settings {
+  encodeUrl: true
+}

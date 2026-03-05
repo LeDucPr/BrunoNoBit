@@ -1,0 +1,38 @@
+meta {
+  name: UnitSearch
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{cms-localhost}}/api/Unit/UnitSearch
+  body: json
+  auth: bearer
+}
+
+headers {
+  Accept: application/json, text/plain, */*
+  Accept-Language: vi-VN,vi;q=0.9,fr-FR;q=0.8,fr;q=0.7,en-US;q=0.6,en;q=0.5
+  Authorization: Bearer eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJIQ2FyZS5OcE9uLlNlc2lvbi5Db2RlIjoiU0VTU0lPTklELUtoYUJhbmgtMDE5YmEwZDJjNzE1NzkwOGFjMGUyNDY2MjQ3M2ZhOTEiLCJUb2tlbkNyZWF0ZWRVdGMiOiIyMDI2LTAxLTA5VDExOjM1OjI2WiIsIlBlcm1pc3Npb25TZXNzaW9uIjoiMSIsIk1pbnV0ZUV4cGlyZSI6IjQ4MCIsInVuaXF1ZV9uYW1lIjoiS2hhQmFuaCIsIkxvZ2luVHlwZSI6IjEiLCJzaWQiOiJhMTNhNTVjOC0yMzBkLTRlMTktYjc5NS0xYTExM2QxOTY2MjYiLCJ0eXAiOiJEZWZhdWx0IiwibmJmIjoxNzY3OTI5NzI2LCJleHAiOjE3Njc5NTg1MjYsImlhdCI6MTc2NzkyOTcyNn0.rwpkdKLQx6Q5btsijzzTrnO3RkAjkem7wmYepTQNBincmupxoq-qRN0bloAvXmGiiMHXM7wajmvABNWnB1yrWA
+  Connection: keep-alive
+  Content-Type: application/json
+  Origin: http://localhost:4400
+  Referer: http://localhost:4400/
+  User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "unitGroup": null,
+      "pageIndex": 0,
+      "pageSize": 25
+  }
+}
+
+settings {
+  encodeUrl: true
+}

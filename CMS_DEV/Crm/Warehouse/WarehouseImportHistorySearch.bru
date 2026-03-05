@@ -1,0 +1,41 @@
+meta {
+  name: WarehouseImportHistorySearch
+  type: http
+  seq: 8
+}
+
+post {
+  url: {{cms-localhost}}/api/Warehouse/WarehouseImportHistorySearch
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+    "Keyword": "",
+  //   "WarehouseFromIds": [
+  //     "d3b07384-d9a0-4f5b-9c8a-123456789abc",
+  //     "a1b2c3d4-e5f6-7890-abcd-1234567890ef"
+  //   ],
+  //   "DealerToIds": [
+  //     "11111111-2222-3333-4444-555555555555"
+  //   ],
+  //   "ProductIds": [
+  //     "99999999-8888-7777-6666-555555555555",
+  //     "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee"
+  //   ],
+  //   "FromDate": "2024-01-01T00:00:00",
+  //   "ToDate": "2024-12-31T23:59:59",
+    "PageSize": 20,
+    "PageIndex": 0
+  }
+  
+}
+
+settings {
+  encodeUrl: true
+}

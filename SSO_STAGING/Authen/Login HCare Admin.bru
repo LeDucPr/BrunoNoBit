@@ -1,0 +1,33 @@
+meta {
+  name: Login HCare Admin
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{sso_staging}}/api/Account/Login
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+}
+
+body:json {
+  {
+      "UserName": "adminHCare",
+      "Password": "adminHCare@123",
+      "AuthType": {{authType}}
+  }
+}
+
+script:post-response {
+  let jsonData = res.getBody();
+  bru.setGlobalEnvVar("token", jsonData.data.model.token);
+  bru.setGlobalEnvVar("refreshToken", jsonData.data.model.refreshToken);
+}
+
+settings {
+  encodeUrl: true
+}

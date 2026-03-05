@@ -1,0 +1,26 @@
+meta {
+  name: New Request_2
+  type: http
+  seq: 3
+}
+
+post {
+  url: https://cms-api-dev.fa.care/api/accountInfo/GetAddressDropdown
+  body: json
+  auth: inherit
+}
+
+headers {
+  authorization: Bearer eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJIQ2FyZS5OcE9uLlNlc2lvbi5Db2RlIjoiU0VTU0lPTklELUtoYUJhbmgtMDE5YzFkOTlkM2ViN2Q4ZjhhZWJlNWMwMDA5ZjQyYTUiLCJUb2tlbkNyZWF0ZWRVdGMiOiIyMDI2LTAyLTAyVDE3OjA1OjQ2WiIsIlBlcm1pc3Npb25TZXNzaW9uIjoiMzMiLCJNaW51dGVFeHBpcmUiOiI0ODAiLCJ1bmlxdWVfbmFtZSI6IktoYUJhbmgiLCJMb2dpblR5cGUiOiIxIiwic2lkIjoiYTEzYTU1YzgtMjMwZC00ZTE5LWI3OTUtMWExMTNkMTk2NjI2IiwidHlwIjoiRGVmYXVsdCIsIlVzaW5nQWNjb3VudExhbmdDb2RlIjoiVk4iLCJVc2luZ0N1cnJlbnRBdXRoVHlwZSI6IjIiLCJuYmYiOjE3NzAwMjMxNDYsImV4cCI6MTc3MDA1MTk0NiwiaWF0IjoxNzcwMDIzMTQ2fQ.VY2xZC1LHVu05ncuWvOPLXWYQ1YJrZKdwLPwNqj6X2x9eheeDFolzPpLpxZ2OUZnqWNsNrEoBZQd9fQj6mq87g
+  content-type: application/json
+}
+
+body:json {
+  {
+    "AccountId": "0b9d365b-19f9-4ab8-a141-d892453caf33"
+  }
+}
+
+settings {
+  encodeUrl: true
+}

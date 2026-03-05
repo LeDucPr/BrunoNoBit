@@ -1,0 +1,24 @@
+meta {
+  name: GetAllEnableLangCode
+  type: http
+  seq: 7
+}
+
+post {
+  url: {{cms-localhost}}/api/Locale/GetAllEnableLangCode
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+  }
+}
+
+settings {
+  encodeUrl: true
+}

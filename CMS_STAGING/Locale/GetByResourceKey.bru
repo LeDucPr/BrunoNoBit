@@ -1,0 +1,25 @@
+meta {
+  name: GetByResourceKey
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{cms-staging}}/api/Locale/GetByResourceKey
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "ResourceKey": "locale.search.textbox"
+  }
+}
+
+settings {
+  encodeUrl: true
+}

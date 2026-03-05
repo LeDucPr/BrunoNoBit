@@ -1,0 +1,28 @@
+meta {
+  name: ManufacturerSearch
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{cms-localhost}}/api/Manufacturer/ManufacturerSearch
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+    "Keyword": "S",
+    "Status": 1,
+    "PageIndex": 0,
+    "PageSize": 20
+  }
+}
+
+settings {
+  encodeUrl: true
+}

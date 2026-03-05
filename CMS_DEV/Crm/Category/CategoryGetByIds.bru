@@ -1,0 +1,33 @@
+meta {
+  name: CategoryGetByIds
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{cms-localhost}}/api/Category/CategoryGetByIds
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  // {
+  //     "CategoryIds": ["ef460964-1a41-456e-b242-25b078887b33"], 
+  //     "IsFlattenBaseCategory": true,
+  //     "RecursiveDepth": -1
+  // }
+  
+  {
+      "CategoryIds": ["75949457-3646-4376-9983-bd926f19c275"], 
+      "IsFlattenBaseCategory": true,
+      "RecursiveDepth": -1
+  }
+}
+
+settings {
+  encodeUrl: true
+}

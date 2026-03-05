@@ -1,0 +1,26 @@
+meta {
+  name: GetByLangCodeAndResource
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{sso-localhost}}/api/Locale/GetByLangCodeAndResourceModule
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "LangCode": "VN",
+      "ResourceModule": 7
+  }
+}
+
+settings {
+  encodeUrl: true
+}

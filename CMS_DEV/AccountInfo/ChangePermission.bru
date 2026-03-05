@@ -1,0 +1,31 @@
+meta {
+  name: ChangePermission
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{cms-localhost}}/api/Account/ChangePermission
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "AccountId": "4c8b6c70-12be-490f-858e-fcd71c349b63",
+      "Controllers": [
+          {
+              "ControllerCode": "HCare.SSO.Account.ChangePermission",
+              "AccessPermission": 1
+          }
+      ]
+  }
+}
+
+settings {
+  encodeUrl: true
+}

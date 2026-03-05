@@ -1,0 +1,25 @@
+meta {
+  name: GetMemberInGroup Copy
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{cms-staging}}/api/AccountGroup/GroupGetById
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: 
+}
+
+body:json {
+  {
+      "GroupId": "36562f2a-dc11-4fa0-8939-7105586202cf" 
+  }
+}
+
+settings {
+  encodeUrl: true
+}

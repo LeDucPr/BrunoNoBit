@@ -1,0 +1,25 @@
+meta {
+  name: GetByIdMenu
+  type: http
+  seq: 5
+}
+
+post {
+  url: {{cms-localhost}}/api/Menu/GetByIdMenu
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "Id":"b32f06e0-21b8-4fcb-9ce9-b3ec7161ed82"
+  }
+}
+
+settings {
+  encodeUrl: true
+}

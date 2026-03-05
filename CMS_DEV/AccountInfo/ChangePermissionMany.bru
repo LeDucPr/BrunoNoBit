@@ -1,0 +1,32 @@
+meta {
+  name: ChangePermissionMany
+  type: http
+  seq: 5
+}
+
+post {
+  url: {{cms-localhost}}/api/AccountPermission/ChangePermissionMany
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      //"AccountIds": ["4c8b6c70-12be-490f-858e-fcd71c349b63"], // chỉ nên  1 trong 2 AccountIds/GroupIds được chứa dữ liệu khi gửi, cả 2 vẫn oke, GroupIds sẽ áp dụng toàn bộ user có trong này
+      "GroupIds": ["36562f2a-dc11-4fa0-8939-7105586202cf"], 
+      "Controllers": [
+          {
+              "ControllerCode": "HCare.SSO.Account.ChangePermission",
+              "AccessPermission": 1
+          }
+      ]
+  }
+}
+
+settings {
+  encodeUrl: true
+}

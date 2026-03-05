@@ -1,0 +1,25 @@
+meta {
+  name: GetByParentIdMenu
+  type: http
+  seq: 6
+}
+
+post {
+  url: {{cms-localhost}}/api/Menu/GetByParentIdMenu
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "ParentId":"839344a1-ce86-49fa-ab9e-329f2e3dd335"
+  }
+}
+
+settings {
+  encodeUrl: true
+}

@@ -1,0 +1,26 @@
+meta {
+  name: GetByLangCodeAndResourceModule
+  type: http
+  seq: 5
+}
+
+post {
+  url: {{cms-localhost}}/api/Locale/GetByLangCodeAndResourceModule
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "LangCode": "VNM",
+      "ResourceModule": 1
+  }
+}
+
+settings {
+  encodeUrl: true
+}

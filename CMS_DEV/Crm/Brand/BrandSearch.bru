@@ -1,0 +1,27 @@
+meta {
+  name: BrandSearch
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{cms-localhost}}/api/Brand/BrandSearch
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "PageSize": 10,
+      "PageIndex": 0
+  }
+  
+}
+
+settings {
+  encodeUrl: true
+}

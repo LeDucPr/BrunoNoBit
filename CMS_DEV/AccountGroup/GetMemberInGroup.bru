@@ -1,0 +1,27 @@
+meta {
+  name: GetMemberInGroup
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{cms-localhost}}/api/AccountGroup/GetMemberInGroup
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "GroupId": "36562f2a-dc11-4fa0-8939-7105586202cf",  
+      "PageSize": 10,
+      "PageIndex": 0
+  }
+}
+
+settings {
+  encodeUrl: true
+}

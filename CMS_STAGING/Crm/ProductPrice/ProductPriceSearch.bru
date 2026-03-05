@@ -1,0 +1,36 @@
+meta {
+  name: ProductPriceSearch
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{cms-staging}}/api/ProductPrice/ProductPriceSearch
+  body: json
+  auth: bearer
+}
+
+headers {
+  Content-Type: application/json
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "ProductId" : null,
+      "DealerId" : null,
+      "DealerLevelId" : null,
+      "StartPrice" : null,
+      "EndPrice" : null,
+      "StartDate" : null,
+      "EndDate" : null,
+      "ApplyType" : null
+  }
+}
+
+settings {
+  encodeUrl: true
+}

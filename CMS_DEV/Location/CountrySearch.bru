@@ -1,0 +1,29 @@
+meta {
+  name: CountrySearch
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{cms-localhost}}/api/Location/CountrySearch
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "Keyword": "",
+      "Status": 1,
+      "IsEnableTranslate": true,
+      "PageSize": 10,
+      "PageIndex": 0
+  }
+}
+
+settings {
+  encodeUrl: true
+}

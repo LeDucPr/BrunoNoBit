@@ -1,0 +1,49 @@
+meta {
+  name: ProductJourneyToWareHouse
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{cms-localhost}}/api/ProductJourney/ProductJourneyToWareHouse
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "components": [
+          {
+              "productId": "536991c7-e5b4-41f1-ab86-63eb586898d7",
+              "serialNumber": "SN-BP-001",
+              "warehouseId": "044a1811-84b2-4252-bd4b-7783547af17d",
+              "productionDate": "2023-10-28T10:00:00Z",
+              "note": "Nhập kho máy đo huyết áp lô 1",
+              "UsableStatus": 2, 
+              "Price": 100000
+          },
+          {
+              "productId": "9df424a1-443d-48a2-8162-cd5beed74832",
+              "serialNumber": "SN-MASK-001",
+              "warehouseId": "044a1811-84b2-4252-bd4b-7783547af17d",
+              "productionDate": "2023-10-28T11:00:00Z",
+              "note": "Nhập kho khẩu trang y tế 3 lớp"
+          },
+          {
+              "productId": "536991c7-e5b4-41f1-ab86-63eb586898d7",
+              "serialNumber": "SN-BP-002",
+              "warehouseId": "044a1811-84b2-4252-bd4b-7783547af17d",
+              "productionDate": "2023-10-28T12:00:00Z",
+              "note": "Nhập kho máy đo huyết áp lô 2"
+          }
+      ]
+  }
+}
+
+settings {
+  encodeUrl: true
+}

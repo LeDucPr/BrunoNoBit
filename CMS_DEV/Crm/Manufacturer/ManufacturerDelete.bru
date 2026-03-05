@@ -1,0 +1,25 @@
+meta {
+  name: ManufacturerDelete
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{cms-localhost}}/api/Manufacturer/ManufacturerDelete
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "ManufacturerIds": ["820a8a1d-e85b-43a6-8e71-5a2640251648"]
+  }
+}
+
+settings {
+  encodeUrl: true
+}

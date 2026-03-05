@@ -1,0 +1,32 @@
+meta {
+  name: AddOrChange
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{cms-staging}}/api/Locale/AddOrChange
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "LocaleComponent": [
+          {
+          "LangCode": "VN",
+          "ResourceModule": 400,
+          "ResourceKey": "accountInfo.genUsernameSuccess",
+          "ResourceValue": "Tự tạo tài khoản thành công"
+    }
+      ]
+  }
+}
+
+settings {
+  encodeUrl: true
+}

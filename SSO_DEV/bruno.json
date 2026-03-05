@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "SSO_DEV",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}

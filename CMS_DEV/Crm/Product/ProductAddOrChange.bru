@@ -1,0 +1,107 @@
+meta {
+  name: ProductAddOrChange
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{cms-localhost}}/api/Product/ProductAddOrChange
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "components": [
+          {
+              "productId": "536991c7-e5b4-41f1-ab86-63eb586898d7",
+              "productParentId": null,
+              "name": "Máy đo huyết áp điện tử",
+              "code": "BP-MON-001",
+              "description": "Thiết bị đo huyết áp dùng trong bệnh viện",
+              "isAbstract": false,
+              "categoryIds": ["ef460964-1a41-456e-b242-25b078887b33"],
+              "Medias": [
+                  {
+                      "ImageUrl": "https://example.com/image1.jpg"
+                  }
+              ],
+              "unitId": "e4d909c2-5d2b-4a7b-9f1a-abcdef123456",
+              "attributes": [
+                  {
+                      // "attributeId": "11111111-1111-1111-1111-111111111111",
+                      // "productId": "536991c7-e5b4-41f1-ab86-63eb586898d7", // không nên truyền vào trong mọi trường hợp
+                      "attributeName": "Khối lượng (kg)",
+                      "attributeCode": "WEIGHT",
+                      "dataType": 1,
+                      "selectType": 1,
+                      "description": "Khối lượng tịnh của máy",
+                      "attributeValues": [
+                          {
+                              // "productAttributeValueId": "22222222-2222-2222-2222-222222222222",
+                              // "productAttributeId": "11111111-1111-1111-1111-111111111111", // không nên truyền vào trong mọi trường hợp
+                              "valueAsString": "0.45"
+                          }, 
+                          {
+                              "valueAsString": "0.55"
+                          }
+                      ]
+                  },
+                  {
+                      // "attributeId": "33333333-3333-3333-3333-333333333333",
+                      // "productId": "536991c7-e5b4-41f1-ab86-63eb586898d7", // không nên truyền vào trong mọi trường hợp
+                      "attributeName": "Ngày sản xuất",
+                      "attributeCode": "MFG_DATE",
+                      "dataType": 3,
+                      "selectType": 1,
+                      "description": "Ngày xuất xưởng",
+                      "attributeValues": [
+                          {
+                              // "productAttributeValueId": "44444444-4444-4444-4444-444444444444", 
+                              // "productAttributeId": "33333333-3333-3333-3333-333333333333", // không nên truyền vào trong mọi trường hợp
+                              "valueAsString": "2023-10-27T14:30:45+07:00"
+                          }
+                      ]
+                  }
+              ]
+          },
+          {
+              "productId": "9df424a1-443d-48a2-8162-cd5beed74832",
+              "productParentId": null,
+              "name": "Khẩu trang y tế 3 lớp",
+              "code": "MASK-003",
+              "description": "Khẩu trang dùng một lần, đạt chuẩn y tế",
+              "isAbstract": false,
+              "category": 3,
+              "subCategory": 1,
+              "unitId": "f2d909c2-5d2b-4a7b-9f1a-abcdef654321",
+              "attributes": [
+                  {
+                      // "attributeId": "55555555-5555-5555-5555-555555555555",
+                      // "productId": "9df424a1-443d-48a2-8162-cd5beed74832", // không nên truyền vào trong mọi trường hợp
+                      "attributeName": "Màu sắc",
+                      "attributeCode": "COLOR",
+                      "dataType": 2,
+                      "selectType": 1,
+                      "description": "Màu sắc sản phẩm",
+                      "attributeValues": [
+                          {
+                              // "productAttributeValueId": "66666666-6666-6666-6666-666666666666", 
+                              // "productAttributeId": "55555555-5555-5555-5555-555555555555", // không nên truyền vào trong mọi trường hợp
+                              "valueAsString": "Xanh dương"
+                          }
+                      ]
+                  }
+              ]
+          }
+      ]
+  }
+}
+
+settings {
+  encodeUrl: true
+}

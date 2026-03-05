@@ -1,0 +1,30 @@
+meta {
+  name: ProductJourneyWarrantyInitialize
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{cms-staging}}/api/ProductJourney/ProductJourneyWarrantyInitialize
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "components": [
+          {
+              "ProductId": "6e826ce3-aba1-487f-b008-13fa7cd117be",
+              "SerialNumber": "SN-001"
+          }
+      ]
+  }
+}
+
+settings {
+  encodeUrl: true
+}

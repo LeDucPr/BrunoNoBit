@@ -1,0 +1,47 @@
+meta {
+  name: CategoryAddOrChange
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{cms-staging}}/api/Category/CategoryAddOrChange
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  // {
+  //     "CategoryId": "75949457-3646-4376-9983-bd926f19c275",
+  //     "CategoryName": "Thuốc tăng sức đề kháng dành cho người Pro",
+  //     "Description": "Viên thuốc Kim Cương",
+  //     "ComboCategoryIds": ["d19f6c91-e612-41ea-a58a-bf50da1baf8f", "27943b9e-6d42-4bf2-83c3-3aa4751ed681"]
+  // }
+  // {
+  //     "CategoryName": "Thuốc tác động thần kinh",
+  //     "Description": "Thuốc gây nghiện",
+  //     "ComboCategoryIds": ["8c5a15ba-d292-42da-92c1-1943217cc1a4", "b6fe0d2d-4ad1-4131-b04a-ad2eee5e1a74"]
+  // }
+  // {
+  //     "CategoryId": "ef460964-1a41-456e-b242-25b078887b33",
+  //     "CategoryName": "Thuốc dành cho người không còn khả năng vận động",
+  //     "Description": "Uống 1 viên khá ổn",
+  //     "ComboCategoryIds": ["75949457-3646-4376-9983-bd926f19c275", "17ffbd7e-8db1-458b-a575-827f2266775c"]
+  // }
+  {
+      // "CategoryId": "75949457-3646-4376-9983-bd926f19c275",
+      "CategoryName": "Danh mục mới 2",
+      "Description": "Danh mục mới 2",
+      "parentCategoryId": "388ce49e-bc10-4bbb-9911-2fb57c2a23af"
+  
+      // "ComboCategoryIds": ["ef460964-1a41-456e-b242-25b078887b33"]
+  }
+}
+
+settings {
+  encodeUrl: true
+}

@@ -1,0 +1,23 @@
+meta {
+  name: GetTreeMenu
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{sso-localhost}}/api/Menu/GetTreeMenu
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {}
+}
+
+settings {
+  encodeUrl: true
+}

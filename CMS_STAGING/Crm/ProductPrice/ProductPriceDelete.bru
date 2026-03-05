@@ -1,0 +1,29 @@
+meta {
+  name: ProductPriceDelete
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{cms-staging}}/api/ProductPrice/ProductPriceDelete
+  body: json
+  auth: bearer
+}
+
+headers {
+  Content-Type: application/json
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "Ids" : ["9fd16479-5b36-447d-98ba-3cf0d0cb8b28", "a8abd8bc-d025-40aa-b75a-eb68ac967323"]
+  }
+}
+
+settings {
+  encodeUrl: true
+}

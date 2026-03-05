@@ -1,0 +1,30 @@
+meta {
+  name: ProductGetById
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{cms-localhost}}/api/Product/ProductGetById
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "ProductId": "9081dfbb-70ed-4b19-890c-4eb7c182d54d"
+  }
+  
+  // {
+  //     "ProductId": "dadb2136-fa1a-4c2b-baf0-9a429160b174"
+  // }
+  
+}
+
+settings {
+  encodeUrl: true
+}

@@ -1,0 +1,25 @@
+meta {
+  name: DealerLevelsGetAll
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{cms-localhost}}/api/Dealer/DealerLevelsGetAll
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      
+  }
+}
+
+settings {
+  encodeUrl: true
+}

@@ -1,0 +1,28 @@
+meta {
+  name: AccountGroupPermissionControllerSearchByAccountGroupId
+  type: http
+  seq: 8
+}
+
+post {
+  url: {{cms-localhost}}/api/AccountPermission/AccountGroupPermissionControllerSearchByAccountGroupId
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "Keyword": "",
+      "AccountGroupId":"892174a2-696c-4acd-a149-7cdcf8318e42",
+      "PageSize": 2,
+      "PageIndex": 0
+  }
+}
+
+settings {
+  encodeUrl: true
+}

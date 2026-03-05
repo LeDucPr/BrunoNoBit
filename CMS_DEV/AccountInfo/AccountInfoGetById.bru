@@ -1,0 +1,30 @@
+meta {
+  name: AccountInfoGetById
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{cms-localhost}}/api/AccountInfo/AccountInfoGetById
+  body: json
+  auth: bearer
+}
+
+headers {
+  Content-Type: application/json
+  ~Authorization: ••••••
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "AccountId": "5f540dd8-4714-44ca-9dc5-153ec0431994"
+  }
+}
+
+settings {
+  encodeUrl: true
+}

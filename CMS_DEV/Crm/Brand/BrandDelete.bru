@@ -1,0 +1,25 @@
+meta {
+  name: BrandDelete
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{cms-localhost}}/api/Brand/BrandDelete
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "BrandId": "2b17190c-a6c8-4f08-9dda-0adc1b787444"
+  }
+}
+
+settings {
+  encodeUrl: true
+}

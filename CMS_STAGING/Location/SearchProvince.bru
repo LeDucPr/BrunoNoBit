@@ -1,0 +1,26 @@
+meta {
+  name: SearchProvince
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{cms-staging}}/api/Location/SearchProvince
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "PageSize":1, 
+      "PageIndex": 1
+  }
+}
+
+settings {
+  encodeUrl: true
+}

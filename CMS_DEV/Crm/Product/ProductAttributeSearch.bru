@@ -1,0 +1,27 @@
+meta {
+  name: ProductAttributeSearch
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{cms-localhost}}/api/Product/ProductAttributeSearch
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "Keyword": "",
+      "PageSize": 10,
+      "PageIndex": 0
+  }
+}
+
+settings {
+  encodeUrl: true
+}

@@ -1,0 +1,32 @@
+meta {
+  name: DealerAddOrChange
+  type: http
+  seq: 7
+}
+
+post {
+  url: {{cms-localhost}}/api/Dealer/DealerAddOrChange
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "DealerLevelId": "620d5e48-d8d1-40f8-b5a2-46fa4c2a688a",
+      "DealerId": "15df32c6-949d-4fb8-9c94-dadd664dfd47",
+      "Name": "Đại lý Ăn Bít",
+      "Code": "Ăn Bít Dealer", 
+      "Address": "Trường Tiểu học Kim Giang",
+      "PhoneNumber": "0984672784",
+      "Email": "anbit@gmail.cc",
+      "Contact": null
+  }
+}
+
+settings {
+  encodeUrl: true
+}

@@ -1,0 +1,49 @@
+meta {
+  name: AddOrChangeAccountInfo
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{sso_staging}}/api/AccountInfo/AddOrChangeAccountInfo
+  body: json
+  auth: bearer
+}
+
+headers {
+  Content-Type: application/json
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+    "Id": "8ac3641a-4cf5-4811-96c1-fc845b553036",
+  //   "CountryId": "11111111-2222-3333-4444-555555555555",
+  //   "ProvinceId": "22222222-3333-4444-5555-666666666666",
+  //   "DistrictId": "33333333-4444-5555-6666-777777777777",
+  //   "WardId": "44444444-5555-6666-7777-888888888888",
+    "FullName": "Ngô Bá Khá",
+    "DateOfBirth": "1990-01-01T00:00:00Z",
+    "Gender": "Male",
+    "Address": "123 Đường ABC, Quận XYZ, Hàs Nội",
+    "Occupation": "Software Engineer",
+    "MaritalStatus": "Single",
+    "Bio": "Yêu công nghệ và thích đọc sách.",
+    "Website": "https://nguyenvana.dev",
+    "SocialLinks": "https://facebook.com/nguyenvana",
+    "IdentificationNumber": "0123456789",
+    "PassportNumber": "C1234567",
+    "TaxCode": "1234567890",
+    "CompanyName": "Công ty TNHH ABC",
+    "CompanyAddress": "456 Đường DEF, Quận GHI, TP.HCM",
+    "Status": 1
+  }
+  
+}
+
+settings {
+  encodeUrl: true
+}

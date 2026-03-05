@@ -1,0 +1,33 @@
+meta {
+  name: Login 2 (Other Normal User)
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{sso_staging}}/api/Account/Login
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+}
+
+body:json {
+  {
+      "UserName": "ChuoiBanana",
+      "Password": "BanaChuoi@1234",
+      "AuthType": {{authType}}
+  }
+}
+
+script:post-response {
+  let jsonData = res.getBody();
+  bru.setGlobalEnvVar("token", jsonData.data.model.token);
+  bru.setGlobalEnvVar("refreshToken", jsonData.data.model.refreshToken);
+}
+
+settings {
+  encodeUrl: true
+}

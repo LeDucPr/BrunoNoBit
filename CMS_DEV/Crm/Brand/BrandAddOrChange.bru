@@ -1,0 +1,40 @@
+meta {
+  name: BrandAddOrChange
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{cms-localhost}}/api/Brand/BrandAddOrChange
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+    "id": "2b17190c-a6c8-4f08-9dda-0adc1b787444",
+    "name": "Sony Xperia CC",
+    "code": "SONY_XPR",
+    "description": "Thương hiệu điện tử nổi tiếng toàn cầu",
+    "status": 1
+  //   "options": [
+  //     {
+  //       "manufactureId": "b2a6f3c3-7d9a-4f4a-9c1d-9f2a7c8d1234",
+  //       "sourceType": 0
+  //     },
+  //     {
+  //       "manufactureId": "c4b7e8d1-1a2b-4c3d-8e9f-7a6b5c4d5678",
+  //       "sourceType": 1
+  //     }
+  //   ]
+  }
+  
+}
+
+settings {
+  encodeUrl: true
+}

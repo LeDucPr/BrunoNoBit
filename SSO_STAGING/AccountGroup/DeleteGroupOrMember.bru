@@ -1,0 +1,28 @@
+meta {
+  name: DeleteGroupOrMember
+  type: http
+  seq: 6
+}
+
+post {
+  url: {{cms-staging}}/api/AccountGroup/DeleteGroupOrMember
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "GroupId": "16ddb290-0ec5-42a8-91cc-816c1ea4d050", 
+      "Leader": "a13a55c8-230d-4e19-b795-1a113d196626", 
+      "Members": ["a993d358-9955-4b19-8f78-6478aec64da1","ef9e43ff-e2f9-40f6-9d4b-7db1b1245275"],
+      "GroupName": "Group các Member của Bảnh"
+  }
+}
+
+settings {
+  encodeUrl: true
+}

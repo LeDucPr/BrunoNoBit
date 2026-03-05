@@ -1,0 +1,25 @@
+meta {
+  name: ProductGetById
+  type: http
+  seq: 5
+}
+
+post {
+  url: {{cms-staging}}/api/Product/ProductGetById
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "ProductId": "88616484-8876-478b-9888-d7c376d205db"
+  }
+}
+
+settings {
+  encodeUrl: true
+}

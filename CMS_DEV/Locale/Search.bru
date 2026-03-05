@@ -1,0 +1,29 @@
+meta {
+  name: Search
+  type: http
+  seq: 6
+}
+
+post {
+  url: {{cms-localhost}}/api/Locale/Search
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "LangCode": "",
+      "Keyword": "",
+      "PageSize": 1, 
+      "PageIndex": 0, 
+      "resourceModule": null
+  }
+}
+
+settings {
+  encodeUrl: true
+}
