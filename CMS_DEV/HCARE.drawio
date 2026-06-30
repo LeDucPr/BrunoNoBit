@@ -1,0 +1,64 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="X3Ej7SneoA_IpZ1JLyMx">
+    <mxGraphModel dx="1414" dy="749" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="bRXCoPtnCOos5vHUt3nM-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Brand" vertex="1">
+          <mxGeometry height="50" width="110" x="180" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="bRXCoPtnCOos5vHUt3nM-5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Category" vertex="1">
+          <mxGeometry height="60" width="120" x="170" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="bRXCoPtnCOos5vHUt3nM-6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Dealer" vertex="1">
+          <mxGeometry height="60" width="120" x="170" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="bRXCoPtnCOos5vHUt3nM-7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="DealerAccountMapping" vertex="1">
+          <mxGeometry height="60" width="140" x="360" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="bRXCoPtnCOos5vHUt3nM-8" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="DealerLevel" vertex="1">
+          <mxGeometry height="60" width="120" x="370" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="bRXCoPtnCOos5vHUt3nM-9" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="GoodsReceipt" vertex="1">
+          <mxGeometry height="60" width="120" x="640" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="bRXCoPtnCOos5vHUt3nM-10" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="GoodsReceiptDetail" vertex="1">
+          <mxGeometry height="60" width="120" x="640" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="bRXCoPtnCOos5vHUt3nM-11" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Manufacturer" vertex="1">
+          <mxGeometry height="60" width="120" x="390" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="bRXCoPtnCOos5vHUt3nM-12" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="ManufacturerAddress" vertex="1">
+          <mxGeometry height="60" width="150" x="370" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="bRXCoPtnCOos5vHUt3nM-13" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Order" vertex="1">
+          <mxGeometry height="60" width="120" x="160" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="bRXCoPtnCOos5vHUt3nM-14" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="OrderLog" vertex="1">
+          <mxGeometry height="60" width="120" x="250" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="bRXCoPtnCOos5vHUt3nM-15" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="ProducedJourney" vertex="1">
+          <mxGeometry height="60" width="120" x="520" y="570" as="geometry" />
+        </mxCell>
+        <mxCell id="bRXCoPtnCOos5vHUt3nM-16" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Product" vertex="1">
+          <mxGeometry height="60" width="120" x="510" y="670" as="geometry" />
+        </mxCell>
+        <mxCell id="bRXCoPtnCOos5vHUt3nM-17" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="ProductAttribute" vertex="1">
+          <mxGeometry height="60" width="120" x="520" y="720" as="geometry" />
+        </mxCell>
+        <mxCell id="bRXCoPtnCOos5vHUt3nM-18" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="ProductAttributeMapping" vertex="1">
+          <mxGeometry height="60" width="150" x="540" y="760" as="geometry" />
+        </mxCell>
+        <mxCell id="bRXCoPtnCOos5vHUt3nM-19" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="ProductAttributeValue" vertex="1">
+          <mxGeometry height="60" width="140" x="580" y="800" as="geometry" />
+        </mxCell>
+        <mxCell id="bRXCoPtnCOos5vHUt3nM-20" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="ProductBatch" vertex="1">
+          <mxGeometry height="60" width="120" x="570" y="890" as="geometry" />
+        </mxCell>
+        <mxCell id="bRXCoPtnCOos5vHUt3nM-21" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="ProductError" vertex="1">
+          <mxGeometry height="60" width="120" x="590" y="940" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
