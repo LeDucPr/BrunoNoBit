@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net">
   <diagram name="Page-1" id="X3Ej7SneoA_IpZ1JLyMx">
-    <mxGraphModel dx="6560" dy="115027" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="18500" pageHeight="111000" math="0" shadow="0">
+    <mxGraphModel dx="3280" dy="113013" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="18500" pageHeight="111000" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -336,57 +336,6 @@
               <mxPoint x="1103" y="880" />
             </Array>
           </mxGeometry>
-        </mxCell>
-        <mxCell id="hMbl2U-K0152mwasdNm7-2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;text-align: left;&quot;&gt;Account&lt;/span&gt;" vertex="1">
-          <mxGeometry height="60" width="120" x="230" y="110" as="geometry" />
-        </mxCell>
-        <mxCell id="hMbl2U-K0152mwasdNm7-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;AccountAddress&lt;/span&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="60" width="120" x="260" y="10" as="geometry" />
-        </mxCell>
-        <mxCell id="hMbl2U-K0152mwasdNm7-5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;div style=&quot;text-align: left;&quot;&gt;AccountContract&lt;/div&gt;" vertex="1">
-          <mxGeometry height="60" width="120" x="440" y="10" as="geometry" />
-        </mxCell>
-        <mxCell id="hMbl2U-K0152mwasdNm7-7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;div style=&quot;text-align: left;&quot;&gt;AccountContractParty&lt;/div&gt;" vertex="1">
-          <mxGeometry height="60" width="160" x="430" y="100" as="geometry" />
-        </mxCell>
-        <mxCell id="hMbl2U-K0152mwasdNm7-8" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;div style=&quot;text-align: left;&quot;&gt;AccountDepartment&lt;/div&gt;" vertex="1">
-          <mxGeometry height="60" width="140" x="640" y="10" as="geometry" />
-        </mxCell>
-        <mxCell id="hMbl2U-K0152mwasdNm7-9" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;div style=&quot;text-align: left;&quot;&gt;AccountDepartmentMapping&lt;/div&gt;" vertex="1">
-          <mxGeometry height="60" width="200" x="630" y="90" as="geometry" />
-        </mxCell>
-        <mxCell id="hMbl2U-K0152mwasdNm7-11" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;div style=&quot;text-align: left;&quot;&gt;AccountGroup&lt;/div&gt;" vertex="1">
-          <mxGeometry height="60" width="140" x="630" y="-90" as="geometry" />
-        </mxCell>
-        <mxCell id="hMbl2U-K0152mwasdNm7-12" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;div style=&quot;text-align: left;&quot;&gt;AccountGroupMenu&lt;/div&gt;" vertex="1">
-          <mxGeometry height="60" width="140" x="230" y="-270" as="geometry" />
-        </mxCell>
-        <mxCell id="hMbl2U-K0152mwasdNm7-13" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;div style=&quot;text-align: left;&quot;&gt;AccountInfo&lt;/div&gt;" vertex="1">
-          <mxGeometry height="60" width="140" x="440" y="-270" as="geometry" />
-        </mxCell>
-        <mxCell id="hMbl2U-K0152mwasdNm7-14" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;div style=&quot;text-align: left;&quot;&gt;AccountMapping&lt;/div&gt;" vertex="1">
-          <mxGeometry height="60" width="140" x="640" y="-280" as="geometry" />
-        </mxCell>
-        <mxCell id="hMbl2U-K0152mwasdNm7-15" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;div style=&quot;text-align: left;&quot;&gt;AccountPermissionController&lt;/div&gt;" vertex="1">
-          <mxGeometry height="60" width="140" x="830" y="-280" as="geometry" />
-        </mxCell>
-        <mxCell id="hMbl2U-K0152mwasdNm7-16" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;div style=&quot;text-align: left;&quot;&gt;AccountPositionDepartment&lt;/div&gt;" vertex="1">
-          <mxGeometry height="60" width="140" x="1040" y="-270" as="geometry" />
-        </mxCell>
-        <mxCell id="hMbl2U-K0152mwasdNm7-17" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;div style=&quot;text-align: left;&quot;&gt;AccountGroupPermissionController&lt;/div&gt;" vertex="1">
-          <mxGeometry height="60" width="140" x="240" y="-190" as="geometry" />
-        </mxCell>
-        <mxCell id="hMbl2U-K0152mwasdNm7-18" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;div style=&quot;text-align: left;&quot;&gt;AccountLogin&lt;/div&gt;" vertex="1">
-          <mxGeometry height="60" width="140" x="450" y="-190" as="geometry" />
-        </mxCell>
-        <mxCell id="hMbl2U-K0152mwasdNm7-19" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;div style=&quot;text-align: left;&quot;&gt;AccountMenu&lt;/div&gt;" vertex="1">
-          <mxGeometry height="60" width="140" x="660" y="-190" as="geometry" />
-        </mxCell>
-        <mxCell id="hMbl2U-K0152mwasdNm7-20" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;div style=&quot;text-align: left;&quot;&gt;AccountPermissionException&lt;/div&gt;" vertex="1">
-          <mxGeometry height="60" width="140" x="850" y="-190" as="geometry" />
-        </mxCell>
-        <mxCell id="hMbl2U-K0152mwasdNm7-21" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;div style=&quot;text-align: left;&quot;&gt;AccountType&lt;/div&gt;" vertex="1">
-          <mxGeometry height="60" width="140" x="1040" y="-180" as="geometry" />
         </mxCell>
         <mxCell id="hMbl2U-K0152mwasdNm7-22" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Brand" vertex="1">
           <mxGeometry height="50" width="110" x="3895" y="-210" as="geometry" />
