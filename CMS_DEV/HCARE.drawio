@@ -114,7 +114,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="bRXCoPtnCOos5vHUt3nM-16" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Product" vertex="1">
+        <mxCell id="bRXCoPtnCOos5vHUt3nM-16" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Product&lt;div&gt;(Can not change Combo info)&lt;/div&gt;" vertex="1">
           <mxGeometry height="100" width="210" x="1050" y="760" as="geometry" />
         </mxCell>
         <mxCell id="n3FyrpiHLGzsT291LhVI-15" edge="1" parent="1" source="bRXCoPtnCOos5vHUt3nM-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="bRXCoPtnCOos5vHUt3nM-19">
