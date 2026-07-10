@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net">
   <diagram name="Page-1" id="X3Ej7SneoA_IpZ1JLyMx">
-    <mxGraphModel dx="943" dy="111599" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="18500" pageHeight="111000" math="0" shadow="0">
+    <mxGraphModel dx="2280" dy="112447" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="18500" pageHeight="111000" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -373,6 +373,24 @@
             <Array as="points">
               <mxPoint x="3425" y="-90" />
             </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vUVoq3HvJN78WNhkTx8h-50" edge="1" parent="1" source="hMbl2U-K0152mwasdNm7-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=0;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;fillColor=#f8cecc;strokeColor=#b85450;" target="hMbl2U-K0152mwasdNm7-98">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2970" y="-330" />
+              <mxPoint x="4438" y="-330" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vUVoq3HvJN78WNhkTx8h-52" connectable="0" parent="vUVoq3HvJN78WNhkTx8h-50" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Khách hàng không có tài khoản vẫn có thể đặt hàng" vertex="1">
+          <mxGeometry relative="1" x="-0.7731" y="-3" as="geometry">
+            <mxPoint x="188" y="-13" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vUVoq3HvJN78WNhkTx8h-54" connectable="0" parent="vUVoq3HvJN78WNhkTx8h-50" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="????????" vertex="1">
+          <mxGeometry relative="1" x="-0.7816" y="-6" as="geometry">
+            <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="hMbl2U-K0152mwasdNm7-32" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Order" vertex="1">
